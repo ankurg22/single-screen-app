@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.android.contact.MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:contentDescription="starbucks image"
+        android:scaleType="centerCrop"
+        android:src="@drawable/starbucks_image" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView"
+        android:layout_alignParentLeft="true"
+        android:fontFamily="sans-serif-light"
+        android:padding="16dp"
+        android:text="Starbucks Coffee"
+        android:textColor="@android:color/white"
+        android:textSize="36sp" />
+
+    <TextView
+        android:id="@+id/about"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/imageView"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="5dp"
+        android:text="Seattle-based coffeehouse chain known for its signature roasts, light bites and WiFi availability."
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/location_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/about"
+        android:contentDescription="location icon"
+        android:paddingLeft="16dp"
+        android:paddingTop="10dp"
+        android:src="@android:drawable/ic_menu_mylocation"
+        android:tint="@android:color/black" />
+
+    <TextView
+        android:id="@+id/location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/about"
+        android:layout_toRightOf="@+id/location_icon"
+        android:fontFamily="sans-serif-condensed"
+        android:padding="10dp"
+        android:text="Hamilton House, Block A, CP, New Delhi"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/internet_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/location_icon"
+        android:contentDescription="internet icon"
+        android:paddingLeft="16dp"
+        android:paddingTop="10dp"
+        android:src="@android:drawable/ic_menu_search"
+        android:tint="@android:color/black" />
+
+    <TextView
+        android:id="@+id/website"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/location_icon"
+        android:layout_toRightOf="@+id/location_icon"
+        android:fontFamily="sans-serif-condensed"
+        android:padding="10dp"
+        android:text="https://www.starbucks.in"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/contact_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/internet_icon"
+        android:contentDescription="contact icon"
+        android:paddingLeft="16dp"
+        android:paddingTop="10dp"
+        android:src="@android:drawable/ic_menu_call"
+        android:tint="@android:color/black" />
+
+    <TextView
+        android:id="@+id/contact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/internet_icon"
+        android:layout_toRightOf="@+id/internet_icon"
+        android:fontFamily="sans-serif-condensed"
+        android:padding="10dp"
+        android:text="011 6900 0263"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/hours_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/contact_icon"
+        android:contentDescription="opening hours icon"
+        android:paddingLeft="16dp"
+        android:paddingTop="10dp"
+        android:src="@android:drawable/ic_menu_recent_history"
+        android:tint="@android:color/black" />
+
+    <TextView
+        android:id="@+id/hours"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/contact_icon"
+        android:layout_toRightOf="@+id/contact_icon"
+        android:fontFamily="sans-serif-condensed"
+        android:padding="10dp"
+        android:text="7:30AM–12:30AM"
+        android:textSize="16sp" />
+
+</RelativeLayout>
